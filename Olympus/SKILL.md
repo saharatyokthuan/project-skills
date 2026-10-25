@@ -9,6 +9,7 @@
 ## Overview
 
 Two independent bots in one repo:
+
 - **Apollo** (`Apollo/telegram-bot/`) — Telegram bot using Telegraf ^4.15.3
 - **Artemis** (`Artemis/`) — Discord bot using discord.js ^14.14.1
 
@@ -17,6 +18,7 @@ Both use `dotenv` ^16.3.1 for environment config. Each has its own `package.json
 ## Interface
 
 ### Inputs
+
 - `Apollo/telegram-bot/src/` — Telegram bot source
 - `Apollo/telegram-bot/package.json` — deps: telegraf, dotenv
 - `Artemis/src/` — Discord bot source
@@ -24,6 +26,7 @@ Both use `dotenv` ^16.3.1 for environment config. Each has its own `package.json
 - `.env` files (not in repo) — `BOT_TOKEN`, `DISCORD_TOKEN`
 
 ### Outputs
+
 - New bot commands, handlers, middleware
 - Updated dependencies
 
@@ -46,6 +49,7 @@ npm start
 ## Examples
 
 ### Example 1: Add Telegram command
+
 ```bash
 # 1. Create handler in Apollo/telegram-bot/src/commands/
 # 2. Register in main bot setup
@@ -53,6 +57,7 @@ npm start
 ```
 
 ### Example 2: Add Discord slash command
+
 ```bash
 # 1. Create command in Artemis/src/commands/
 # 2. Register in deploy-commands.js or main index

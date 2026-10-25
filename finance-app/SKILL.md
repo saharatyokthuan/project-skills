@@ -13,11 +13,13 @@ Project exists at `/root/projects/finance-app/` with `README.md` and `README2.md
 ## Interface
 
 ### Inputs
+
 - `/root/projects/finance-app/README.md`
 - `/root/projects/finance-app/README2.md`
 - Project source files (to be discovered)
 
 ### Outputs
+
 - Updated this SKILL.md after exploration
 - Project modifications
 
@@ -35,6 +37,7 @@ cat README2.md
 ## Examples
 
 ### Example 1: First-time setup
+
 ```bash
 # 1. Read both README files
 # 2. List all files to understand structure

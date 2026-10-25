@@ -11,6 +11,7 @@
 Single-file vending stock manager (originally `index.txt`, must rename to `index.html`). Offline-first, no dependencies, mobile-first (max-width 520px).
 
 Features:
+
 - Product CRUD with quick +/- stock buttons
 - Categories with stock level bars
 - Auto alerts: out of stock, below threshold, near expiry, expired
@@ -23,9 +24,11 @@ No build, no server, no dependencies — pure HTML/JS/CSS in one file.
 ## Interface
 
 ### Inputs
+
 - `index.html` (renamed from `index.txt`) — entire application
 
 ### Outputs
+
 - Modified `index.html` with new features/fixes
 
 ## Usage
@@ -44,6 +47,7 @@ python3 -m http.server 8000
 ## Examples
 
 ### Example 1: Add expiry tracking field
+
 ```bash
 # 1. Add expiry date input to product form
 # 2. Extend product object schema
@@ -53,6 +57,7 @@ python3 -m http.server 8000
 ```
 
 ### Example 2: Add barcode scanning
+
 ```bash
 # 1. Add camera access button (requires https:// or localhost)
 # 2. Integrate barcode detection API

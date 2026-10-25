@@ -11,6 +11,7 @@
 Minimal repository — contains only a `README.md` that appears on the GitHub profile page for user `j-bunrod`. Uses GitHub's special profile README feature.
 
 Content is a template with placeholders for:
+
 - Current work, learning, collaboration interests
 - Skills, pronouns, contact info
 - Fun fact
@@ -20,9 +21,11 @@ No code, no build, no dependencies.
 ## Interface
 
 ### Inputs
+
 - `README.md` — profile content
 
 ### Outputs
+
 - Updated `README.md`
 
 ## Usage
@@ -38,6 +41,7 @@ git push
 ## Examples
 
 ### Example 1: Update profile sections
+
 ```bash
 # Replace placeholder sections in README.md with actual info
 # - 🔭 Currently working on

@@ -9,6 +9,7 @@
 ## Overview
 
 Elaborate GitHub profile README with:
+
 - Animated banner (capsule-render)
 - Typing SVG animation (readme-typing-svg)
 - Profile stats cards (github-readme-stats)
@@ -24,10 +25,12 @@ All content in single `README.md` with external service URLs for dynamic images.
 ## Interface
 
 ### Inputs
+
 - `README.md` — profile content with dynamic badge URLs
 - `README-en.md` — English version
 
 ### Outputs
+
 - Updated `README.md` / `README-en.md`
 
 ## Usage
@@ -43,6 +46,7 @@ git push
 ## Examples
 
 ### Example 1: Update banner
+
 ```bash
 # Modify capsule-render.vercel.app URL parameters:
 # - text=NAME, fontSize, fontAlignY
@@ -51,12 +55,14 @@ git push
 ```
 
 ### Example 2: Add new contact badge
+
 ```bash
 # Add shields.io or custom-icon-badges.demolab.com badge
 # Follow existing pattern: <a href="URL"><img src="BADGE_URL" alt="LABEL" /></a>
 ```
 
 ### Example 3: Update snake animation
+
 ```bash
 # Requires .github/workflows/snake.yml to run
 # Output commits to output/github-snake.svg

@@ -11,6 +11,7 @@
 ShiftMate is a mobile-first weekly shift scheduler (Mon–Sun). Core frontend: `index.html`, `style.css`, `app.js`. Optional backend in `backend/` (Flask + SQLite). Tools in `tools/` for backup/convert.
 
 Key features:
+
 - Day/Week/Month views, two table modes (row=employee or row=shift)
 - Employee CRUD (code, name, position, phone)
 - Shift CRUD (code, name, start/end time, color, cross-day, OT, OFF)
@@ -23,6 +24,7 @@ Key features:
 Seed data: 8 shifts (M, A, N, T08, T10, T13, MGR, OFF) — editable in UI.
 
 Business rules:
+
 - 1 employee = 1 shift/day (no time overlap check — shifts naturally overlap)
 - OT flag per shift → shows as `M +OT` chip
 - OT checkbox only for shifts with `otUntil` set
@@ -39,11 +41,13 @@ CSS theming via variables at top of `style.css` (`--c-primary`, `--c-bg`, etc.).
 ## Interface
 
 ### Inputs
+
 - `index.html`, `style.css`, `app.js` — frontend SPA
 - `backend/app.py`, `backend/database.py` — Flask API
 - `tools/backup.py`, `tools/convert.py` — CLI tools
 
 ### Outputs
+
 - Modified frontend/backend code
 - New shift/employee business logic
 
@@ -70,6 +74,7 @@ python convert.py backup.json backup.csv
 ## Examples
 
 ### Example 1: Add new shift type
+
 ```bash
 # 1. Add to seed data in app.js (shifts array) and backend/database.py
 # 2. Add OT support if needed (otUntil field)
@@ -78,6 +83,7 @@ python convert.py backup.json backup.csv
 ```
 
 ### Example 2: Add copy-week feature
+
 ```bash
 # 1. Add button in UI (schedule page)
 # 2. Implement in app.js: read current week, write to next week

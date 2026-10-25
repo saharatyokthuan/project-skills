@@ -11,6 +11,7 @@
 Multi-page finance app (not single-page like Cash-Flow/pos-mobile). Pages: `index.html`, `dashboard.html`, `transactions.html`, `budget.html`, `debts.html`, `goals.html`, `recurring.html`, `settings.html`.
 
 Modular JavaScript in `js/`:
+
 - `js/db.js` — data layer (localStorage wrapper)
 - `js/nav.js` — navigation between pages
 - `js/utils.js` — shared utilities
@@ -23,6 +24,7 @@ CSS: `css/style.css` for styling.
 ## Interface
 
 ### Inputs
+
 - 8 HTML pages in root
 - `js/db.js` — central data store
 - `js/nav.js` — page routing
@@ -30,6 +32,7 @@ CSS: `css/style.css` for styling.
 - `manifest.json`, `sw.js` — PWA config
 
 ### Outputs
+
 - New/modified pages and JS modules
 - Updated data schema in db.js
 
@@ -46,6 +49,7 @@ python3 -m http.server 8000
 ## Examples
 
 ### Example 1: Add new page
+
 ```bash
 # 1. Create newpage.html with standard structure
 # 2. Create js/newpage.js with page-specific logic
@@ -55,6 +59,7 @@ python3 -m http.server 8000
 ```
 
 ### Example 2: Extend data model
+
 ```bash
 # 1. Modify js/db.js: add new store/key
 # 2. Update load/save logic

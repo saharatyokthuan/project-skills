@@ -9,6 +9,7 @@
 ## Overview
 
 pos-mobile-labs extends pos-mobile with a full backend stack:
+
 - **Frontend**: Same `index.html`, `style-pos.css`, `script-pos.js` as pos-mobile
 - **Backend**: FastAPI + SQLite + Alembic migrations in `backend/`
   - `backend/app/main.py` — FastAPI entry point
@@ -24,12 +25,14 @@ Docker Compose orchestration in `docker-compose.yml` with nginx reverse proxy.
 ## Interface
 
 ### Inputs
+
 - `backend/app/` — FastAPI application
 - `backend/alembic/` — database migrations
 - `backend/tests/` — pytest test suite
 - `docker-compose.yml` — full stack orchestration
 
 ### Outputs
+
 - New API endpoints, services, models
 - Alembic migration scripts
 - WebSocket event handlers
@@ -56,6 +59,7 @@ alembic revision --autogenerate -m "description"
 ## Examples
 
 ### Example 1: Add new API endpoint
+
 ```bash
 # 1. Add model in backend/app/models/
 # 2. Create service in backend/app/services/
@@ -66,6 +70,7 @@ alembic revision --autogenerate -m "description"
 ```
 
 ### Example 2: Add WebSocket event
+
 ```bash
 # 1. Add event type in backend/app/websocket.py
 # 2. Handle in backend/app/websocket_manager.py

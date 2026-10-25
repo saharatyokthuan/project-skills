@@ -9,6 +9,7 @@
 ## Overview
 
 A 5-lesson Python course for beginners targeting data analysis/automation. Each lesson has:
+
 - Markdown documentation in `lessons/lesson-XX.md` with problems + hidden solutions in `<details>`
 - Multiple `.py` example files demonstrating concepts
 - Lesson 5 capstone: `exercise1.py` with `exercise1_tests.json`
@@ -21,6 +22,7 @@ Verification script at `~/.config/opencode/skills/code-teacher/scripts/check_exe
 ## Interface
 
 ### Inputs
+
 - `lessons/lesson-01.md` through `lesson-05.md` — lesson content
 - `lesson1_basic.py`, `lesson2_*.py`, `lesson3_*.py`, `lesson4_*.py`, `lesson5_*.py` — examples
 - `exercise1.py` — capstone project with `???` placeholders
@@ -28,6 +30,7 @@ Verification script at `~/.config/opencode/skills/code-teacher/scripts/check_exe
 - `sales.csv` — sample data
 
 ### Outputs
+
 - Updated lesson docs, examples, exercises
 - New test cases in `exercise*_tests.json`
 
@@ -45,6 +48,7 @@ python3 /root/.config/opencode/skills/code-teacher/scripts/check_exercise.py exe
 ## Examples
 
 ### Example 1: Add new lesson
+
 ```bash
 # 1. Create lessons/lesson-06.md with problems + <details> solutions
 # 2. Create lesson6_*.py example files
@@ -54,6 +58,7 @@ python3 /root/.config/opencode/skills/code-teacher/scripts/check_exercise.py exe
 ```
 
 ### Example 2: Fix broken example
+
 ```bash
 # 1. Run the .py file to see error
 # 2. Fix code — ensure it matches lesson concept
