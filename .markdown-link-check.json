@@ -1,0 +1,9 @@
+{
+  "retryOn429": true,
+  "retryCount": 3,
+  "fallbackRetryDelay": 1000,
+  "aliveStatusCodes": [200, 206],
+  "ignorePatterns": [
+    { "pattern": ".*github.com.*/edit/.*" }
+  ]
+}
