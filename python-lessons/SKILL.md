@@ -1,8 +1,8 @@
-# python-lessons Skill
+# Skill Name Skill
 
 > **For agentic workers:** REQUIRED SUB-SKILL: N/A
 
-**Purpose:** Skill for python-lessons project
+**Purpose:** Skill for project
 
 **When to Use:** [Conditions that trigger use of this skill]
 
@@ -13,10 +13,12 @@
 ## Interface
 
 ### Inputs
+
 - [Input 1]: [Description and type]
 - [Input 2]: [Description and type]
 
 ### Outputs
+
 - [Output 1]: [Description and type]
 
 ## Usage
@@ -28,11 +30,13 @@
 ## Examples
 
 ### Example 1: [Scenario]
+
 ```bash
 # Command or code
 ```
 
 ### Example 2: [Scenario]
+
 ```bash
 # Command or code
 ```

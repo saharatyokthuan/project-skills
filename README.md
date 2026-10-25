@@ -5,7 +5,7 @@ This repository contains skill definitions (SKILL.md) for each project in the wo
 ## Projects
 
 | Project | Description | Skill File |
-|---------|-------------|------------|
+| ------- | ----------- | ---------- |
 | [Cash-Flow](./Cash-Flow/SKILL.md) | Static Thai finance SPA (HTML/JS/CSS, localStorage) | `Cash-Flow/SKILL.md` |
 | [Olympus](./Olympus/SKILL.md) | Empty project | `Olympus/SKILL.md` |
 | [budgetctrl](./budgetctrl/SKILL.md) | Static HTML/JS budget tracker | `budgetctrl/SKILL.md` |
@@ -20,7 +20,7 @@ This repository contains skill definitions (SKILL.md) for each project in the wo
 
 ## Structure
 
-```
+```text
 project-skills/
 ├── Cash-Flow/
 │   └── SKILL.md
