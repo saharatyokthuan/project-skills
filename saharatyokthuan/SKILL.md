@@ -1,56 +1,82 @@
-# Skill Name Skill
+# saharatyokthuan Skill
 
 > **For agentic workers:** REQUIRED SUB-SKILL: N/A
 
-**Purpose:** Skill for project
+**Purpose:** Skill for working with saharatyokthuan — GitHub profile README with dynamic badges, stats, and animations.
 
-**When to Use:** [Conditions that trigger use of this skill]
+**When to Use:** Updating the GitHub profile README for user saharatyokthuan.
 
 ## Overview
 
-[Detailed description of the skill, its scope, and key concepts]
+Elaborate GitHub profile README with:
+- Animated banner (capsule-render)
+- Typing SVG animation (readme-typing-svg)
+- Profile stats cards (github-readme-stats)
+- Top languages card
+- Streak stats
+- Activity graph
+- Snake animation (github-snake)
+- Contact badges (email, LinkedIn, portfolio, LINE, Discord, Telegram, social media)
+- Thai/English language toggle
+
+All content in single `README.md` with external service URLs for dynamic images.
 
 ## Interface
 
 ### Inputs
-
-- [Input 1]: [Description and type]
-- [Input 2]: [Description and type]
+- `README.md` — profile content with dynamic badge URLs
+- `README-en.md` — English version
 
 ### Outputs
-
-- [Output 1]: [Description and type]
+- Updated `README.md` / `README-en.md`
 
 ## Usage
 
 ```bash
-# Example command or code snippet showing how to invoke/use this skill
+# Edit directly
+cd /root/projects/saharatyokthuan
+# Modify README.md or README-en.md
+git commit -am "docs: update profile"
+git push
 ```
 
 ## Examples
 
-### Example 1: [Scenario]
-
+### Example 1: Update banner
 ```bash
-# Command or code
+# Modify capsule-render.vercel.app URL parameters:
+# - text=NAME, fontSize, fontAlignY
+# - desc=TAGLINE, descSize, descAlignY
+# - color=gradient, animation=fadeIn
 ```
 
-### Example 2: [Scenario]
-
+### Example 2: Add new contact badge
 ```bash
-# Command or code
+# Add shields.io or custom-icon-badges.demolab.com badge
+# Follow existing pattern: <a href="URL"><img src="BADGE_URL" alt="LABEL" /></a>
+```
+
+### Example 3: Update snake animation
+```bash
+# Requires .github/workflows/snake.yml to run
+# Output commits to output/github-snake.svg
+# Reference in README with picture element for dark/light mode
 ```
 
 ## Constraints & Rules
 
-- [Rule 1]
-- [Rule 2]
+- All dynamic content via external services (vercel, demolab, vercel.app, etc.)
+- Thai primary, English secondary (README-en.md)
+- Snake animation requires GitHub Action workflow
+- Stats cards hit rate limits — consider self-hosting github-readme-stats
+- Profile views badge uses komarev.com/ghpvc
+- Use picture element for dark/light mode images
 
 ## Related Skills
 
-- [Related skill 1]
-- [Related skill 2]
+- j-bunrod (simpler profile README)
 
 ## References
 
-- [Link to documentation or source]
+- `/root/projects/saharatyokthuan/README.md` — Thai version
+- `/root/projects/saharatyokthuan/README-en.md` — English version
