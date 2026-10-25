@@ -54,4 +54,3 @@
 ## References
 
 - [Link to documentation or source]
-
