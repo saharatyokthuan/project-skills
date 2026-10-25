@@ -66,4 +66,3 @@ Each project folder contains a `SKILL.md` file that defines skills specific to t
 ## License
 
 TBD
-
