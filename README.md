@@ -18,6 +18,16 @@ This repository contains skill definitions (SKILL.md) for each project in the wo
 | [shiftmate](./shiftmate/SKILL.md) | Shift-scheduling SPA with optional Flask backend | `shiftmate/SKILL.md` |
 | [vender](./vender/SKILL.md) | Vendor management | `vender/SKILL.md` |
 
+## Personal Assistant: Laura (ลอร่า)
+
+This folder is set up so Claude Code acts as **Laura**, a Thai-speaking personal assistant and orchestrator. Laura delegates work to team members defined as subagents:
+
+| Member | Definition | Role | Output |
+| ------ | ---------- | ---- | ------ |
+| Laura | [CLAUDE.md](./CLAUDE.md) | Orchestrator — receives requests and delegates | — |
+| idea | [.claude/agents/idea.md](./.claude/agents/idea.md) | Turns raw thoughts into structured idea cards | `ideas/` |
+| research | [.claude/agents/research.md](./.claude/agents/research.md) | Researches idea cards or direct topics with cited sources | `research/` |
+
 ## Structure
 
 ```text
